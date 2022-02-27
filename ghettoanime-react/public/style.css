@@ -28,8 +28,6 @@ section {
     border-color: #000000;
 }
 .card { 
-    border: 30px;
-    border-color: #000000;
     width: 300px;
     font-size: 18px;
     flex: 0 0 auto;         
@@ -37,6 +35,10 @@ section {
     flex-flow: column wrap; 
     position: relative;
     outline: 10px;
+    border-width:2px;
+    border-style:solid;
+    border-color:#13110023;
+    border-radius:10px ;
 }
 .card--stats{
     min-width: 160px;
