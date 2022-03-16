@@ -19,9 +19,12 @@ section {
 }
 .navbar > h1{
     margin-right: 50%;
+    
 }
-.navbar > a{
+.navbar--links{
     margin: 20px;
+    text-decoration: none;
+    color: white;
 }
 .card { 
     width: 300px;

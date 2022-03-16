@@ -20,14 +20,14 @@ export default function LoginForm() {
                 type="text"
                 placeholder="Username"
                 onChange={handleChange}
-                name="firstName"
+                name="username"
                 value={formData.username}
             />
             <input
                 type="password"
                 placeholder="Password"
                 onChange={handleChange}
-                name="lastName"
+                name="password"
                 value={formData.password}
             />
         </form>
