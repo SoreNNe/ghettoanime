@@ -18,7 +18,7 @@ export default function LoginForm() {
     function handleLogin(event){
         event.preventDefault()
         console.log(formData)
-        axios.post("http://localhost:8080/api/v1/user/", {
+        axios.post("http://localhost:8080/api/v1/user", {
             "name": formData.name,
             "mail": formData.mail,
             "password": formData.password,
