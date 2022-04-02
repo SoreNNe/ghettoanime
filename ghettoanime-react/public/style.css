@@ -7,7 +7,7 @@ body{
 }
 section {
     padding: 20px 20%;
-    background-color: #1a17014b;
+    background-color: #1a17013b;
 }
 .navbar{
     background: linear-gradient(90.41deg, #131100 1.14%, #131601b4 100%);
@@ -51,4 +51,7 @@ section {
     flex-wrap: wrap;
     gap: 20px;
     
+}
+.videoPlayer{
+    padding:10% 30%;
 }
