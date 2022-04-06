@@ -24,11 +24,14 @@ const animeCards = data.animeList.map(animecards => {
        <div >
          <LoginForm/>
          <Navbar/>
+         <Routes>
+         <Route path="/WatchingPage" element={<WatchingPage/>}/>
+         </Routes>
          <section className='card--list'>
            <Routes>
              <Route path="/" element={ongoingCards}/>
              <Route path="/AnimeList" element={animeCards}/>
-             <Route path="/WatchingPage" element={<WatchingPage/>}/>
+             
              
            </Routes>
          </section>
