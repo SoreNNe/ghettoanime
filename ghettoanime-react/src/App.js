@@ -6,6 +6,7 @@ import data from './data';
 import LoginForm from './components/LoginForm';
 import AnimeList from './components/AnimeList';
 import WatchingPage from './components/WatchingPage';
+import LogLoginForm from './components/LogLogInForm';
 
 export default function App() {
   const ongoingCards = data.new.map(ongoing => {
@@ -22,7 +23,7 @@ const animeCards = data.animeList.map(animecards => {
   return (
     <BrowserRouter>
        <div >
-         <LoginForm/>
+         
          <Navbar/>
          <Routes>
          <Route path="/WatchingPage" element={<WatchingPage/>}/>
@@ -31,6 +32,8 @@ const animeCards = data.animeList.map(animecards => {
            <Routes>
              <Route path="/" element={ongoingCards}/>
              <Route path="/AnimeList" element={animeCards}/>
+             <Route path="/SignUp" element={<LoginForm/>}/>
+             <Route path="/SignIn" element={<LogLoginForm/>}/>
              
              
            </Routes>

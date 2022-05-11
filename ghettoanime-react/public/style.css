@@ -3,11 +3,12 @@
 }
 body{
     margin: 0;
+    background-color: #1a17013b;
     
 }
 section {
     padding: 20px 20%;
-    background-color: #1a17013b;
+    
 }
 .navbar{
     background: linear-gradient(90.41deg, #131100 1.14%, #131601b4 100%);
@@ -15,7 +16,7 @@ section {
     display: flex;
     align-items: center;
     color: white;
-    padding: 20px;
+    
 }
 .navbar > h1{
     margin-right: 50%;
@@ -26,6 +27,10 @@ section {
     text-decoration: none;
     color: white;
 }
+.navbar--links--login{
+    
+}
+
 .card { 
     width: 300px;
     font-size: 18px;
@@ -50,5 +55,14 @@ section {
     align-content: stretch;
     flex-wrap: wrap;
     gap: 20px;
-    
+}
+.loginForm--box{
+    display: flex;
+    flex-direction: column;
+    padding: 23%;
+}
+.forms--inputs{
+    margin: 10px;
+    border-radius: 12px;
+    font-size: 22px;
 }
