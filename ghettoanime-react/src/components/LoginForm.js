@@ -1,5 +1,6 @@
 import React from "react"
 import axios from "axios"
+import { Link, NavLink } from 'react-router-dom';
 
 export default function LoginForm() {
     const [formData, setFormData] = React.useState(
@@ -32,8 +33,10 @@ export default function LoginForm() {
       }
     
     return (
-        <form>
+        <>
+        <form className="loginForm--box">
             <input
+                className="forms--inputs"
                 type="text"
                 placeholder="Username"
                 onChange={handleChange}
@@ -41,6 +44,7 @@ export default function LoginForm() {
                 value={formData.name}
             />
             <input
+                className="forms--inputs"
                 type="password"
                 placeholder="Password"
                 onChange={handleChange}
@@ -48,13 +52,16 @@ export default function LoginForm() {
                 value={formData.password}
             />
             <input
+                className="forms--inputs"
                 type="text"
                 placeholder="Mail"
                 onChange={handleChange}
                 name="mail"
                 value={formData.mail}
             />
-            <button onClick={handleLogin}>SIGN UP</button>
+            <button className="forms--inputs" onClick={handleLogin}>SIGN UP</button>
         </form>
+        <p>Already have an account? <Link to="/SignIn">SIGN IN HERE</Link></p>
+        </>
     )
 }
