@@ -7,9 +7,10 @@ import LoginForm from './components/LoginForm';
 import AnimeList from './components/AnimeList';
 import WatchingPage from './components/WatchingPage';
 import LogLoginForm from './components/LogLogInForm';
+import SelectedAnime from './components/SelectedAnime';
 
 export default function App() {
-  const ongoingCards = data.new.map(ongoing => {
+  const ongoingCards = data.episode.map(ongoing => {
     return (
         <Main {...ongoing}/>
         )
@@ -17,6 +18,11 @@ export default function App() {
 const animeCards = data.animeList.map(animecards => {
   return (
       <AnimeList {...animecards}/>
+      )
+})       
+const selectedAnime = data.animeInfo.shamanKing.map(selectedanime => {
+  return (
+      <SelectedAnime {...selectedanime}/>
       )
 })       
     
@@ -27,6 +33,7 @@ const animeCards = data.animeList.map(animecards => {
          <Navbar/>
          <Routes>
          <Route path="/WatchingPage" element={<WatchingPage/>}/>
+         <Route path="/Anime" element={selectedAnime}/>
          </Routes>
          <section className='card--list'>
            <Routes>
@@ -34,6 +41,7 @@ const animeCards = data.animeList.map(animecards => {
              <Route path="/AnimeList" element={animeCards}/>
              <Route path="/SignUp" element={<LoginForm/>}/>
              <Route path="/SignIn" element={<LogLoginForm/>}/>
+             
              
              
            </Routes>

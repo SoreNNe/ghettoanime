@@ -1,12 +1,12 @@
 export default {
-  "new":[
+  "episode":[
    {
       "id": "1",
       "url": "https://cdn.discordapp.com/attachments/816715668421607505/947547266154131506/shaman-king-2021.png",
       "title": "Shaman king(2021)",
       "episode": "Episode 1",
       "name": "Speak Slowly",
-      "anime": "https://animedao.to/anime/shaman-king-2021/"
+      
     },
     {
       "id": "2",
@@ -166,4 +166,18 @@ export default {
     },
 
   ],
+  animeInfo:{
+    "shamanKing" :[
+    {
+      "id": "56",
+      "imageUrl": "https://cdn.discordapp.com/attachments/816715668421607505/947547266154131506/shaman-king-2021.png",
+      "animeTitle": "Shaman king(2021)",
+      "episodeName": "kek",
+      "description" : "The series follows Koko Hekmatyar, a young arms dealer who sells weapons under HCLI, an international shipping corporation that secretly deals in the arms trade. As one of the company's unofficial weapon dealers, she secretly sells weapons in many countries while avoiding the local authorities and law enforcement as most of her work is actually illegal under international law. Traveling with her is her team of bodyguards who are mostly composed of ex-military veterans. Her latest addition to her crew is Jonah, a seemingly emotionless child soldier who is skilled in combat yet ironically hates arms dealers. Jonah joins Koko as he wishes to find the arms dealer responsible for his family's death. What follows is Koko and her crew's escapades around the world.",
+                
+    },  
+    
+
+  ],
+ }
 }

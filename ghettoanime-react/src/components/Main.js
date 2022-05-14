@@ -11,7 +11,7 @@ export default function Main(props){
                     <h4>{props.episode}</h4>
                     <p>{props.name}</p>
                     <hr/>
-                    <a href={props.anime}>{props.title}</a>
+                    <Link to="/Anime">{props.title}</Link>
                 </div>
             </div>
         </main>

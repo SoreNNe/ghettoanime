@@ -66,3 +66,24 @@ section {
     border-radius: 12px;
     font-size: 22px;
 }
+.container--anime{
+    padding: 2%;
+    display: flex;
+}
+.selected-anime-image{
+   border-radius: 12px;
+   max-width: 400px;
+}
+.anime-info{
+    padding: 15px;
+}
+.container--anime--episodes{
+    padding: 5px 15px;
+    margin: 5%;
+    margin-top: 0%;
+    border: 2px solid #13110023;
+    border-radius: 12px;
+}
+.episodes-text{
+    padding-left: 20px;
+}
