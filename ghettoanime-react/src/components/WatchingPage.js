@@ -5,6 +5,16 @@ import './VideoStyles.css'
 export default props => {
   return (  
       <>
+      <div className='watching-anime-info'>
+        <img src='https://cdn.discordapp.com/attachments/816715668421607505/947547266154131506/shaman-king-2021.png'></img>
+        <div>
+        <h1>Shaman King</h1>
+        <h2>Episode </h2>
+        <p>episode name</p>
+        </div>
+      </div>
+      <hr/>
+        <div className='player--box'>
          <Player poster="/assets/poster.png">
            <source src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4" />
 
@@ -17,6 +27,7 @@ export default props => {
              <VolumeMenuButton disabled />
            </ControlBar>
          </Player>
+         </div>
          <div>
 
 

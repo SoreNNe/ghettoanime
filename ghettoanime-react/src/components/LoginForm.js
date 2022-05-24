@@ -60,8 +60,9 @@ export default function LoginForm() {
                 value={formData.mail}
             />
             <button className="forms--inputs" onClick={handleLogin}>SIGN UP</button>
+            <p>Already have an account? <Link to="/SignIn">SIGN IN HERE</Link></p>
         </form>
-        <p>Already have an account? <Link to="/SignIn">SIGN IN HERE</Link></p>
+        
         </>
     )
 }

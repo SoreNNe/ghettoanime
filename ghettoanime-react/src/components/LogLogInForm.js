@@ -51,8 +51,9 @@ export default function LogLoginForm() {
                 value={formData.password}
             />
             <button className="forms--inputs" onClick={handleLogin}>SIGN IN</button>
+            <p>Don't have account yet? <Link to="/SignUp">SIGN UP HERE</Link></p>
         </form>
-        <p>Don't have account yet? <Link to="/SignUp">SIGN UP HERE</Link></p>
+        
         </>
     )
 }

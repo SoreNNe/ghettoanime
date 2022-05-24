@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AnimeList(props) {
   return (
@@ -7,7 +8,7 @@ export default function AnimeList(props) {
                 <div className="card--stats">
                     <h4>{props.title}</h4>
                     <hr/>
-                    <a href={props.anime}>{props.title}</a>
+                    <Link to="/Anime">{props.title}</Link>
                 </div>
             </div>
   )
